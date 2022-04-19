@@ -11,6 +11,20 @@
 # Hints:  Use the in operator to check if a character is in another string
 #         For example, if some_char in 'abc':
 
-letter = input("Enter a letter")
-alphabet = ('abcdefghijklmnopqrstuvwxyz')
-if 
+result = "not valid"
+while result == "not valid":
+    letter = input("Enter a letter: ")
+    littleletter = letter.lower()
+    vowel = ('aeiou')
+    if littleletter.isalpha() and len(littleletter) == 1:
+        if littleletter in vowel:
+            print(f"{letter} is a Vowel")
+            result = "valid"
+        elif letter == "y":
+            print(f"{letter} is SOMETIMES a Vowel!")
+            result = "valid"
+        else:
+            print(f"{letter} is a Consonant!")
+            result = "valid"
+    else:
+        print("Invalid entry, don't get cheeky, 1 letter.")

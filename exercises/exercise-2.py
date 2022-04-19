@@ -6,4 +6,7 @@
 # 2. Print the following message:
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
-
+phrase = "starting"
+while phrase != "quit":
+    phrase = input("write a phrase")
+    print(f"You typed {len(phrase)} characters.")

@@ -12,3 +12,15 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
+# First 50 terms when starting at 0 only goes up to term 49...
+
+count = 0
+base = 0
+next = 1
+next2 = 0
+while count < 50:
+    print(f"term: {count} / number: {base}")
+    next2 = base + next
+    base = next
+    next = next2
+    count += 1
